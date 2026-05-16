@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>salon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hair wash</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- Slides -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="shampoo1.jpg"  class="d-block w-100" alt="Slide 1"   style="height:768px;", "width:1366px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First Slide</h5>
+        <p>This is the first slide</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img  src="shampoo2.jpg"  class="d-block w-100" alt="Slide 2"   style="height:600px;" , "width:1366px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second Slide</h5>
+        <p>This is the second slide</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="shampoo3.jpg" class="d-block w-100" alt="Slide 3"   style="height:600px;" , "width:1366px;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third Slide</h5>
+        <p>This is the third slide</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Herbal Shampoo | Product Details</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .price {
+            font-size: 26px;
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 16px;
+        }
+        .product-img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-5">
+    <div class="row g-5">
+
+        <!-- Product Image -->
+        <div class="col-md-5">
+            <img src="product.jpg" class="img-fluid product-img" alt="Herbal Shampoo">
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-7">
+            <h1 class="mb-2">Herbal Anti-Hair Fall Shampoo</h1>
+            <p class="text-muted">Strong, shiny & dandruff-free hair</p>
+
+            <p class="price">
+                ₹299 <span class="old-price ms-2">₹399</span>
+            </p>
+
+            <p>
+                Ye shampoo natural ingredients se bana hai jo hair fall kam karta hai,
+                dandruff remove karta hai aur baalon ko healthy banata hai.
+            </p>
+
+            <!-- Buttons -->
+            <div class="mb-3">
+                <button class="btn btn-success btn-lg me-2">Buy Now</button>
+                <button class="btn btn-outline-success btn-lg">Add to Cart</button>
+            </div>
+
+            <!-- Product Info Tabs -->
+            <ul class="nav nav-tabs mt-4" id="productTab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#benefits">
+                        Benefits
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#ingredients">
+                        Ingredients
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#usage">
+                        How to Use
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content border p-3">
+                <div class="tab-pane fade show active" id="benefits">
+                    <ul>
+                        <li>Hair fall control</li>
+                        <li>Dandruff removal</li>
+                        <li>Natural shine</li>
+                        <li>Sulphate & Paraben free</li>
+                    </ul>
+                </div>
+
+                <div class="tab-pane fade" id="ingredients">
+                    <p>Aloe Vera, Onion Extract, Neem, Coconut Oil</p>
+                </div>
+
+                <div class="tab-pane fade" id="usage">
+                    <ol>
+                        <li>Baalo ko geela kare</li>
+                        <li>Thoda shampoo lagaye</li>
+                        <li>2–3 minute massage kare</li>
+                        <li>Achhi tarah se wash kare</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+<!-- Hair Type Selector -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Select Your Hair Type</h2>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- Dry Hair -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card text-center shadow-sm hair-card" onclick="selectHair('Dry Hair')">
+                <div class="card-body">
+                    <h1>🌵</h1>
+                    <h5 class="card-title">Dry Hair</h5>
+                    <p class="card-text">Rough & damaged hair</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Oily Hair -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card text-center shadow-sm hair-card" onclick="selectHair('Oily Hair')">
+                <div class="card-body">
+                    <h1>💧</h1>
+                    <h5 class="card-title">Oily Hair</h5>
+                    <p class="card-text">Greasy scalp</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Normal Hair -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card text-center shadow-sm hair-card" onclick="selectHair('Normal Hair')">
+                <div class="card-body">
+                    <h1>✨</h1>
+                    <h5 class="card-title">Normal Hair</h5>
+                    <p class="card-text">Healthy & balanced</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Curly Hair -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card text-center shadow-sm hair-card" onclick="selectHair('Curly Hair')">
+                <div class="card-body">
+                    <h1>🌀</h1>
+                    <h5 class="card-title">Curly Hair</h5>
+                    <p class="card-text">Frizzy curls</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Result -->
+    <div class="text-center mt-4">
+        <h4 id="result" class="text-success"></h4>
+    </div>
+</div>
+
+<!-- Custom CSS -->
+<style>
+    .hair-card {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+    .hair-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+</style>
+
+<!-- JavaScript -->
+<script>
+    function selectHair(type) {
+        document.getElementById("result").innerHTML =
+            "Recommended for: <strong>" + type + "</strong>";
+    }
+</script>
+
+
+
+
+
+<!-- Ingredients Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Key Ingredients</h2>
+
+    <div class="row g-4">
+
+        <!-- Ingredient 1 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <img src="aloe-vera.jpg" class="card-img-top" alt="Aloe Vera">
+                <div class="card-body">
+                    <h5 class="card-title">Aloe Vera</h5>
+                    <p class="card-text">
+                        Scalp ko moisturize karta hai aur hair growth me help karta hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredient 2 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <img src="onion.jpg" class="card-img-top" alt="Onion Extract">
+                <div class="card-body">
+                    <h5 class="card-title">Onion Extract</h5>
+                    <p class="card-text">
+                        Hair fall control karta hai aur roots ko strong banata hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredient 3 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <img src="neem.jpg" class="card-img-top" alt="Neem">
+                <div class="card-body">
+                    <h5 class="card-title">Neem</h5>
+                    <p class="card-text">
+                        Dandruff aur scalp infection se bachata hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredient 4 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <img src="coconut-oil.jpg" class="card-img-top" alt="Coconut Oil">
+                <div class="card-body">
+                    <h5 class="card-title">Coconut Oil</h5>
+                    <p class="card-text">
+                        Baalon ko deep nourishment aur shine deta hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- Trust & Safety Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Trust & Safety</h2>
+
+    <div class="row g-4 text-center">
+
+        <!-- Certification -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-success">✔️</h1>
+                    <h5 class="card-title">Certified Quality</h5>
+                    <p class="card-text">
+                        ISO & GMP certified manufacturing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dermatologically Tested -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-primary">🧪</h1>
+                    <h5 class="card-title">Dermatologically Tested</h5>
+                    <p class="card-text">
+                        Safe for all hair types.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secure Payment -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-warning">🔒</h1>
+                    <h5 class="card-title">Secure Payment</h5>
+                    <p class="card-text">
+                        100% safe & encrypted transactions.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Money Back Guarantee -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-danger">💯</h1>
+                    <h5 class="card-title">Money Back Guarantee</h5>
+                    <p class="card-text">
+                        7-day easy return policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+<!-- Benefits Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Shampoo Benefits</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-success">🌿</h1>
+                    <h5 class="card-title">Hair Fall Control</h5>
+                    <p class="card-text">
+                        Baalon ki jhadna kam karta hai aur roots ko strong banata hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-primary">❄️</h1>
+                    <h5 class="card-title">Dandruff Removal</h5>
+                    <p class="card-text">
+                        Dandruff aur itchy scalp se relief deta hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-warning">✨</h1>
+                    <h5 class="card-title">Natural Shine</h5>
+                    <p class="card-text">
+                        Baalon ko smooth aur shiny banata hai.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card h-100 text-center shadow-sm">
+                <div class="card-body">
+                    <h1 class="text-danger">🧴</h1>
+                    <h5 class="card-title">Chemical Free</h5>
+                    <p class="card-text">
+                        Sulphate aur Paraben free formula.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hair wash</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
